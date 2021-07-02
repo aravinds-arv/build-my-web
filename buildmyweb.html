@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build.myweb</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="shortcut icon" href="buildlogo.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: rgb(210, 215, 240);">
+        <a class="navbar-brand" href="#">
+            <img src="buildlogo.png" alt="" style="height: 40px">
+        </a>
+        <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+    
+            <span class="navbar-toggler-icon"></span>
+            
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav w-100 justify-content-end">
+                <li class="nav-item">
+                    <a href="#carouselExampleIndicators" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#register" class="nav-link active">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#mentors" class="nav-link active">Mentors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#participants" class="nav-link active">Participants</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top: 66px;">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="carousel.png" class="d-block w-100" alt="carousel.png">
+          </div>
+          <div class="carousel-item">
+            <img src="carousel2.png" class="d-block w-100" alt="carousel.png">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <section style="background-image: url('photo-1532289402244-3cbf8bdeb722.webp'); background-size: cover; background-repeat: no-repeat; background-position: bottom; display: flex; justify-content: center; padding: 20px;">
+          <div style="width: 75%; padding: 30px; display: flex;  flex-direction: column;  background-color: #d1f0ffb6; justify-content: center; border: 0; border-radius: 8px;">
+            <h3 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 650; color: rgb(61, 61, 61); text-align: center;">Join Us..</h3>
+            <p class="text-center" style="margin-top: 15px;">Pygrammers is a community of python enthusiasts with simillar idealogies and interests</p>
+            <p class="text-center" style="margin-top: 15px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem reprehenderit pariatur velit iure iusto, <br>sequi exercitationem voluptas dolor amet officia? Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Quidem reprehenderit pariatur velit iure iusto, sequi exercitationem voluptas dolor amet officia?</p>
+            <a type="button" class="btn btn-info" style="margin: 25px auto;" href="https://t.me/pygrammers_official" >Telegram</a>
+          </div>
+      </section>
+    
+    <h4 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 550; color: rgb(61, 61, 61); text-align: center; margin-top: 70px;" id="register">Register Now!</h4>
+    <section class="d-flex justify-content-center" style="background-color: rgb(252, 252, 252); margin: 20px 33%; width: auto; border: rgb(202, 202, 202) solid 2px; border-radius: 8px;">
+        <form action="" style="width: 90%;
+                                padding: 20px;">
+            <div class="form-group" style="margin-top: 15px;">
+                <label for="1" style="width: 100%; text-align: center;">Name</label>
+                <input type="text" class="form-control" id="1">
+            </div>
+            <div class="form-group">
+                <label for="2" style="width: 100%; text-align: center;">Mobile Number</label>
+                <input type="text" class="form-control" id="2">
+            </div>
+            <div class="form-group">
+                <label for="3" style="width: 100%; text-align: center;">Email address</label>
+                <input type="email" class="form-control" id="3">
+            </div>
+            <div class="form-group">
+                <label for="4" style="width: 100%; text-align: center;">Institution name</label>
+                <input type="text" class="form-control" id="4">
+            </div>
+            <div class="form-group" style="margin: 25px;">
+            <small id="5" class="form-text text-muted">Upload a short video or image of a handwritten sheet showing your interest to join Build.myWeb</small>
+                <input type="file" class="form-control-file" aria-describedby="5">
+            </div>
+            <div class="form-group">
+                <select class="form-control">
+                  <option selected disabled>Have you attended any events by Pygrammers before?</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+            </div>
+            <div class="d-flex justify-content-center" style="width: 100%; margin-top: 50px; margin-bottom: 30px;">
+                <button type="button" class="btn btn-outline-primary" style="width: 40%;">Submit</button>
+            </div>
+        </form>
+    </section>
+    <section style="margin: 80px 0px;padding: 20px; background-color: rgb(228, 230, 252);" id="mentors">
+        <h3 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 650; color: rgb(61, 61, 61); text-align: center ; margin-top: 20px;" >Our Mentors..</h3>
+        <div class="row" style="margin: 30px auto;">
+            <div class="col-md">
+                <div class="card" style="width: 18rem; margin: 20px auto;">
+                    <img src="images.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card" style="width: 18rem; margin: 20px auto;">
+                    <img src="images.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card" style="width: 18rem; margin: 20px auto;">
+                    <img src="images.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin: 30px auto;">
+            <div class="col-md">
+                <div class="card" style="width: 18rem; margin: 20px auto;">
+                    <img src="images.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card" style="width: 18rem; margin: 20px auto;">
+                    <img src="images.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card" style="width: 18rem; margin: 20px auto;">
+                    <img src="images.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin: 30px auto;">
+            <div class="col-md">
+                <div class="card" style="width: 18rem; margin: 20px auto;">
+                    <img src="images.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card" style="width: 18rem; margin: 20px auto;">
+                    <img src="images.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card" style="width: 18rem; margin: 20px auto;">
+                    <img src="images.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+    <h4 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 550; color: rgb(61, 61, 61); text-align: center; margin-top: 70px;" id="participants">Registrations in the previous hour..</h4>
+        <table class="table table-striped table-bordered" style="margin: 20px 30px;">
+            <thead>
+                <tr>
+                <th scope="col"># Registration No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Institution</th>
+                <th scope="col">Onboarding time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">257</th>
+                    <td>Yokki Chuzhali</td>
+                    <td>KGPTC Westhill, Kozhikode</td>
+                    <td>5:48 PM, Today</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">256</th>
+                    <td>Salim Umer</td>
+                    <td>Government Polytechic College, Perinthalmana</td>
+                    <td>5:32 PM,Today</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">255</th>
+                    <td>Anuroop</td>
+                    <td>KGPTC Westhill, Kozhikode</td>
+                    <td>5:28 PM, Today</td>
+                </tr>
+                <tr>
+                    <th scope="row">254</th>
+                    <td>Yokki Chuzhali</td>
+                    <td>KGPTC Westhill, Kozhikode</td>
+                    <td>5:48 PM, Today</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">253</th>
+                    <td>Salim Umer</td>
+                    <td>Government Polytechic College, Perinthalmana</td>
+                    <td>5:32 PM,Today</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">252</th>
+                    <td>Anuroop</td>
+                    <td>KGPTC Westhill, Kozhikode</td>
+                    <td>5:28 PM, Today</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+<footer style="height: 55px; background-color: rgb(178, 185, 224); margin-top: 90px; display: flex; justify-content: center; " >
+    <img src="footer.png" alt="" style="padding: 8px;" >
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
